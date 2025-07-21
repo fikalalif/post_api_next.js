@@ -1,13 +1,13 @@
-import React from 'react'
+// import viewUserButton from "../components/viewUserButton";
+"use client";
 
 const Post = () => {
+  const handleClick = () => alert('aku dipencet');
   return (
-    <div>
-        <h1>Post Page</h1>
-        <p>This is the post page content.</p>
-        <p>maybe u can try to react before u start learn next</p>
-    </div>
-  )
-}
-
-export default Post
+    <>
+      <div className="bg-fuchsia-500"> ini post page</div>
+      <button onClick={handleClick}>lihat user</button>
+    </>
+  );
+};
+export default Post;
