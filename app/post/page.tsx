@@ -1,6 +1,3 @@
-// import viewUserButton from "../components/viewUserButton";
-"use client";
-
 import CardList from "../components/Posts/CardList";
 import ViewUserButton from "../components/Posts/ViewUserButton";
 
@@ -16,12 +13,13 @@ interface Ipost {
 const Post = async () => {
   const response = await fetch(base_url);
   const posts: Ipost[] = await response.json();
+  
 
   return (
     <>
       {posts.map((post) => {
         return (
-          <CardList>
+          <CardList key={post.id}>
             <p>{post.id}</p>
             <p>{post.title}</p>
             <p>{post.body}</p>

@@ -1,11 +1,17 @@
 import { link } from "fs";
 import Image from "next/image";
+import Navbar from "./components/Navbar/Navbar";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <a href="/post" className="text-emerald-950">sangkul</a>
-    </div>
-  )
+    <>
+      <div>
+        <Navbar/>
+        <h1>Hello World</h1>
+        <a href="/post" className="text-fuchsia-700">
+          sangkul
+        </a>
+      </div>
+    </>
+  );
 }

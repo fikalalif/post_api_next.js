@@ -2,16 +2,16 @@
 import React from "react";
 
 interface ViewUserButtonProps{
-    userId: number;
+    userId: number
 }
 
-const ViewUserButton: React. FC<ViewUserButtonProps> = ({userId}) => {
-    const handleClick = () => alert(userId);
+const ViewUserButton: React.FC<ViewUserButtonProps> = ({userId}) => {
+    const handleClick = () => alert(`usre id = ${userId}`);
     return(
         <>
-            <button onClick={handleClick}>lihat user hehe</button>
+            <button onClick={handleClick} className="bg-sky-500 hover:bg-sky-700">lihat user</button>
         </>
     );
 }
 
-export default ViewUserButton
+export default ViewUserButton;
