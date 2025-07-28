@@ -13,7 +13,7 @@ const Navbar = () => {
               alt="plotek harber"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              plotek harber
+              POLTEK MWAHALLL REK
             </span>
           </a>
           <button
